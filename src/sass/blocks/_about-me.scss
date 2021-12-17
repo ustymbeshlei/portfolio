@@ -1,0 +1,54 @@
+.about-me {
+    padding: 120px 0 120px 0;
+    &__wrapper {
+        
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-columns: 1fr 2fr;
+    }
+    &__subtitle {
+        position: relative;
+        @include before-circle;
+        padding-left: 10px;
+        z-index: 2;
+    }
+    &__divider {
+        width: 60px;
+        height: 0px;
+        border: 3px solid $main-color;
+    }
+    &__item {
+        margin-left: 70px;
+        padding-top: 6px;
+    }
+    &__descr {
+        margin-top: 20px;
+        width: 570px;
+    }
+    &__skill {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr 1fr;
+        row-gap: 20px;
+        .skill__item{
+            margin-left: 50px;
+            width: 260px;
+            position: relative;
+            img {
+                position: absolute;
+                left: -35px;
+                top: 14px;
+                
+            }
+            &__title {
+                position: relative;
+                @include before-circle_img;
+            }
+            &__descr {
+                margin-top: 6px;
+                width: 200px;
+            }
+        }
+    }
+}
