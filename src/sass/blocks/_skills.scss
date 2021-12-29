@@ -39,4 +39,47 @@
             line-height: 18px;  
         }
     }
+    .progress {
+        margin-top: 120px;
+        display: grid;
+        grid-template: repeat(2, 70px) / repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 30px;
+        &__item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            &-title {
+                position: relative;
+                @include before-circle;
+                &:before {
+                    top: -15%;
+                }
+                padding: 1px 0 0 12px;
+                z-index: 2;
+            }
+            &-percent {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: right;
+            }
+            &-scale {
+                position: relative;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                width: 350px;
+                height: 14px;
+                background: #E8E4DE;
+                border-radius: 4px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background: $main-color;
+                    width: 75%;
+                    height: 14px;
+                }
+            }
+        }
+    }
 }
+
