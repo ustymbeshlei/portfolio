@@ -19,8 +19,8 @@
 .divider {
     width: 60px;
     height: 3px;
-    border: 3px solid $main-color;
-    margin: 25px auto 0 auto
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
 
 }
 @import 'blocks/promo';
@@ -32,3 +32,4 @@
 @import 'blocks/descr';
 @import 'blocks/resume';
 @import 'blocks/skills';
+@import 'blocks/portfolio';
