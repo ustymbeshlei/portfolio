@@ -12,7 +12,7 @@
     }
     &__item {
         display: grid;
-        grid-template: repeat(2, 1fr) / 2fr 1fr;
+        grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
         row-gap: 5px;
         &-title {
             position: relative;
