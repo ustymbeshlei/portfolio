@@ -22,6 +22,24 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 60px 45px 0 45px;
+            grid-template-columns: repeat(2, 400px);
+            column-gap: 70px;
+        }
+    }
+    .skills {
+        .progress {
+            grid-template: repeat(2,70px)/repeat(3,300px);
+            column-gap: 30px;
+            &__item {
+                &-scale {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -47,6 +65,23 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 60px 60px 0 60px;
+            grid-template-columns: 600px;
+            row-gap: 30px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template: repeat(2,1fr)/repeat(3,1fr);
+            grid-auto-rows: 1fr;
+        }
+        .progress {
+            grid-template: repeat(2,70px)/repeat(2,330px);
+            column-gap: 60px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -58,6 +93,9 @@
         &_fz48 {
             font-size: 28px;
         }
+    }
+    .divider {
+        margin-top: 15px;
     }
     .promo {
         &__title {
@@ -82,6 +120,25 @@
             }
         }
     }
+    .resume {
+        padding-top: 40px;
+        
+        &__wrapper {
+            padding: 40px 20px 0 20px;
+            grid-template-columns: 500px;
+        }
+    }
+    .skills {
+        margin-top: 40px;
+        &__wrapper {
+            padding: 20px 0 0 0;
+            grid-template: repeat(3,1fr)/repeat(2,1fr);
+        }
+        .progress {
+            margin-top: 40px;
+            grid-template: repeat(6,70px) / 540px;
+        }
+    }
 
 }
 
@@ -97,6 +154,11 @@
         }
         &_fz36 {
             font-size: 24px;
+        }
+        &__section {
+            &-subtitle {
+                line-height: 36px;
+            }
         }
     }
     .hamburger {
@@ -120,6 +182,28 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 10px 0 10px;
+            grid-template-columns: 290px;
+        }
+        &__item {
+            &-location {
+                margin-top: 0;
+            }
+        }
+    }
+    .skills {
+        &__wrapper {
+            padding: 20px 15px 0 15px;
+            grid-template: repeat(7, 270px) / 270px;
+            justify-content: center;
+        }
+        .progress {
+            grid-template: repeat(6,70px) / 300px;
+            justify-content: center;
         }
     }
 }
